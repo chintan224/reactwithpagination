@@ -29,8 +29,8 @@ function PageData() {
   }, [])
 
   const indexOfLastRecord = currentPage * recordsPerPage;
-  const indexOfFirstRecord = indexOfLastRecord - recordsPerPage
-  const currentRecords = data.slice(indexOfFirstRecord - indexOfLastRecord)
+  const indexOfFirstRecord = indexOfLastRecord - recordsPerPage;
+  const currentRecords = data.slice(indexOfFirstRecord, indexOfLastRecord)
   const nPages = Math.ceil(data.length / recordsPerPage)  
 
 
