@@ -3,8 +3,8 @@ import './App.css';
 
 import {useState, useEffect} from 'react';
 import axios from 'axios';
-import Records from './components/Records.js'
-import Pagination from './components/Pagination.js' 
+import Records from './components/Records.js';
+import Pagination from './components/Pagination' 
 
 
 
@@ -38,7 +38,7 @@ function App() {
     <div className='container mt-5'>
         <h2> Pagination Example in React</h2>
         <Records data={currentRecords} />
-        <Pagintaion
+        <Pagination
           nPages={nPages}
           currentPage={currentPage}
           setCurrentPage={setCurrentPage}

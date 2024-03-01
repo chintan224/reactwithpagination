@@ -13,12 +13,12 @@ const Records = ({data}) => {
             </thead>
             <tbody>
                 {data.map(item => {
-                    <tr>
+                    return (<tr>
                         <td>{item.userId}</td>
                         <td>{item.id}</td>
                         <td>{item.title}</td>
                         <td>{item.body}</td>
-                    </tr>
+                    </tr>)
                 })}
             </tbody>
         </table>

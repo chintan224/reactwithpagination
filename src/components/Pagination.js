@@ -25,7 +25,7 @@ const Pagination = ({nPages,currentPage,setCurrentPage}) => {
                                     className="page-link"
                                     href='#'>
                                         {pgNumber}
-                                    </a>
+                                </a>
                             </li>
                         ))
                     }
